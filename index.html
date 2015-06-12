@@ -2,139 +2,138 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href='http://fonts.googleapis.com/css?family=Righteous|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
-    <title>KingSting | Botball Documentation Generator</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Righteous|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+  <title>KingSting | Botball Documentation Generator</title>
 </head>
 
 <body>
-    <script src=javascript.js></script>
-    <header>
-      <div id="name">
-        <a href="index.html">
-          <img src="img/logo.svg" id=logo>
-          <h1>KingSting</h1>
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="selected">Homepage</a></li>
-          <li><a href="https://github.com/KingSting/botballFunctions">Botball Library</a></li>
-          <li><a href="botball-doc-gen.html">Botball Documentation Generator</a></li>
-          <li><a href="http://github.com/KingSting">Github Profile</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-    Start Date:
-    <input type="date" id="startDate" value="2015-01-12">
-    <br> End Date:
-    <input type="date" id="endDate" value="2015-03-11">
-    <br>Team Name:
-    <input type="text" id="teamName" value="Roxbury Latin">
-    <br>Team Number:
-    <input type="text" id="teamNumber" value="15-0075">
-    <br>Region:
-    <input type="text" id="region" value="New England">
-    <br>Lego Robot Ability:
-    <input type="text" id="legoRobotAbility" value="can climb over PVC">
-    <br>Create Robot Ablility:
-    <input type="text" id="createRobotAbility" value="collects poms">
-    <br>Documentation Period 1 Due Date:
-    <input type="date" id="firstPeriodDueDate" value="2015-02-17">
-    <br>Documentation Period 2 Due Date:
-    <input type="date" id="secondPeriodDueDate" value="2015-03-03">
-    <br>Documentation Period 3 Due Date:
-    <input type="date" id="thirdPeriodDueDate" value="2015-03-24">
-    <br> Minimum amount of days between dates is 50. Game review needs to be released before start date. Don't forget to fill in blank spots at the bottom
-    <br>
-    <button onclick="init()">Generate Documentation</button>
-    <div class="divider">
-        <div id="firstTitle"></div>
-        <div id="header"></div>
-        <div id="gameGoalTitle"></div>
-        <div id="gameGoal"></div>
-        <div id="robotGoalTitle"></div>
-        <div id="robotGoal"></div>
-        <div id="programmingGoalTitle"></div>
-        <div id="programmingGoal"></div>
-        <div id="documentationGoalTitle"></div>
-        <div id="documentationGoal"></div>
-        <div id="misc">
-            <h1 dir="ltr">
-    Team Organization
-</h1>
-            <h2 dir="ltr">
-    Schedule of Meetings Times
-</h2>
-            <p dir="ltr">
-                Workshop Date: ____________________
-            </p>
-            <p dir="ltr">
-                Competition Date: ____________________
-            </p>
-            <p dir="ltr">
-                The team will meet on weekdays with the exception of fridays, and days without school from 2:35 to 4:00
-            </p>
-            <h2 dir="ltr">
-    Conflict Resolution
-</h2>
-            <ul>
-                <li dir="ltr">
-                    <p dir="ltr">
-                        Team members in conflict will be asked to attempt to work out the problem among themselves.
-                    </p>
-                </li>
-                <li dir="ltr">
-                    <p dir="ltr">
-                        If this is unsuccessful, they will ask senior team members for input
-                    </p>
-                </li>
-                <li dir="ltr">
-                    <p dir="ltr">
-                        Senior team members will either make a final decision or choose to bring the problem to a vote among senior team members.
-                    </p>
-                </li>
-                <li dir="ltr">
-                    <p dir="ltr">
-                        If this is unsuccessful, the problems will be brought to the Faculty Advisor
-                    </p>
-                </li>
-            </ul>
-            <h2 dir="ltr">
-    Scheduling Conflicts
-</h2>
-            <ul>
-                <li dir="ltr">
-                    <p dir="ltr">
-                        Some team members have wresting meets 2 days per week
-                    </p>
-                </li>
-                <li dir="ltr">
-                    <p dir="ltr">
-                        Learning team members have math club on Thursday
-                    </p>
-                </li>
-                <li dir="ltr">
-                    <p dir="ltr">
-                        Several team members have chess club on Mondays and Tuesdays
-                    </p>
-                </li>
-                <li dir="ltr">
-                    <p dir="ltr">
-                        Spring Break
-                    </p>
-                </li>
-                <li dir="ltr">
-                    MLK Weekend
-                </li>
-            </ul>
-        </div>
-    </div>
-    <footer>"Crown" icon used in logo is by Patrick Brentano from <a href="thenounproject.com">the Noun Project</a></footer>
+<script src=javascript.js></script>
+<header>
+  <div id="name">
+    <a href="index.html">
+      <img src="img/logo.svg" id=logo>
+      <h1>KingSting</h1>
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="https://kingsting.github.io/index.html">Homepage</a></li>
+      <li><a href="https://github.com/KingSting/botballFunctions">Botball Library</a></li>
+      <li><a href="https://kingsting.github.io/botballdocgen/index.html" class="selected">Botball Documentation Generator</a></li>
+      <li><a href="http://github.com/KingSting">Github Profile</a></li>
+    </ul>
+  </nav>
+</header>
+Start Date:
+<input type="date" id="startDate" value="2015-01-12">
+<br> End Date:
+<input type="date" id="endDate" value="2015-03-11">
+<br>Team Name:
+<input type="text" id="teamName" value="Roxbury Latin">
+<br>Team Number:
+<input type="text" id="teamNumber" value="15-0075">
+<br>Region:
+<input type="text" id="region" value="New England">
+<br>Lego Robot Ability:
+<input type="text" id="legoRobotAbility" value="can climb over PVC">
+<br>Create Robot Ablility:
+<input type="text" id="createRobotAbility" value="collects poms">
+<br>Documentation Period 1 Due Date:
+<input type="date" id="firstPeriodDueDate" value="2015-02-17">
+<br>Documentation Period 2 Due Date:
+<input type="date" id="secondPeriodDueDate" value="2015-03-03">
+<br>Documentation Period 3 Due Date:
+<input type="date" id="thirdPeriodDueDate" value="2015-03-24">
+<br> Minimum amount of days between dates is 50. Game review needs to be released before start date. Don't forget to fill in blank spots at the bottom
+<br>
+<button onclick="init()">Generate Documentation</button>
+<div class="generated">
+  <div id="firstTitle"></div>
+  <div id="header"></div>
+  <div id="gameGoalTitle"></div>
+  <div id="gameGoal"></div>
+  <div id="robotGoalTitle"></div>
+  <div id="robotGoal"></div>
+  <div id="programmingGoalTitle"></div>
+  <div id="programmingGoal"></div>
+  <div id="documentationGoalTitle"></div>
+  <div id="documentationGoal"></div>
+  <div id="misc">
+    <h1 dir="ltr">
+      Team Organization
+    </h1>
+    <h2 dir="ltr">
+      Schedule of Meetings Times
+    </h2>
+    <p dir="ltr">
+      Workshop Date: ____________________
+    </p>
+    <p dir="ltr">
+      Competition Date: ____________________
+    </p>
+    <p dir="ltr">
+      The team will meet on weekdays with the exception of fridays, and days without school from 2:35 to 4:00
+    </p>
+    <h2 dir="ltr">
+      Conflict Resolution
+    </h2>
+    <ul>
+      <li dir="ltr">
+        <p dir="ltr">
+          Team members in conflict will be asked to attempt to work out the problem among themselves.
+        </p>
+      </li>
+      <li dir="ltr">
+        <p dir="ltr">
+          If this is unsuccessful, they will ask senior team members for input
+        </p>
+      </li>
+      <li dir="ltr">
+        <p dir="ltr">
+          Senior team members will either make a final decision or choose to bring the problem to a vote among senior team members.
+        </p>
+      </li>
+      <li dir="ltr">
+        <p dir="ltr">
+          If this is unsuccessful, the problems will be brought to the Faculty Advisor
+        </p>
+      </li>
+    </ul>
+    <h2 dir="ltr">
+      Scheduling Conflicts
+    </h2>
+    <ul>
+      <li dir="ltr">
+        <p dir="ltr">
+          Some team members have wresting meets 2 days per week
+        </p>
+      </li>
+      <li dir="ltr">
+        <p dir="ltr">
+          Learning team members have math club on Thursday
+        </p>
+      </li>
+      <li dir="ltr">
+        <p dir="ltr">
+          Several team members have chess club on Mondays and Tuesdays
+        </p>
+      </li>
+      <li dir="ltr">
+        <p dir="ltr">
+          Spring Break
+        </p>
+      </li>
+      <li dir="ltr">
+        MLK Weekend
+      </li>
+    </ul>
+  </div>
+</div>
+<footer>"Crown" icon used in logo is by Patrick Brentano from <a href="thenounproject.com">the Noun Project</a></footer>
 </body>
 
 </html>
